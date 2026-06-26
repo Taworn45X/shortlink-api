@@ -1,0 +1,20 @@
+{
+  "name": "shortlink-api",
+  "version": "1.0.0",
+  "description": "A small RESTful URL shortener built with Express.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test"
+  },
+  "keywords": ["rest-api", "express", "url-shortener", "docker"],
+  "author": "Thaworn Saengsawang",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  }
+}
