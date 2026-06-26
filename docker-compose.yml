@@ -1,0 +1,14 @@
+services:
+  api:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - BASE_URL=http://localhost:3000
+    volumes:
+      - shortlink-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  shortlink-data:
